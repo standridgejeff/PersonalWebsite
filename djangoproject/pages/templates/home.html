@@ -1,9 +1,21 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Welcome to JeffStandridge.org{% endblock %}
+
 
 
 {% block content %}
-
-
-Home Page!!!
-
+<div class="row" style="padding-top: 0rem">
+	<div class="d-flex align-items-stretch col-xs- col-sm-8 col-md-6 col-lg-12 p-2.5 text-center" style="padding-bottom: 2rem">
+		<div class="card" style="width: 12rem">
+			<img src="{% static 'images/jeffstandridgecroppedphoto.jpg' %}" class="card-img-fluid" style="height: 12rem">
+			<div class="card-body" style="width: 12rem">
+				<h5 class="card-title">Freelance Software Developer</h5>
+				<p class="card-text" style="padding-top: 0rem">I am passionate about technology, the pursuit of learning, and helping people. I have valuable experience working with customers to solve problems, and working as part of a team. </p>
+				<a href="{% url 'about' %}" class="btn btn-dark" style="">More About Jeff</a>
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock %}
