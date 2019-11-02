@@ -3,7 +3,28 @@
 
 {% block title %}Welcome to JeffStandridge.org{% endblock %}
 
-
 {% block content %}
-<h1> Home Page!</h1>
+<div id ="topSection" class="jumbotron">
+	<div class="container container-fluid text-center">
+		<h1 id="header">Jeff Standridge</h1>
+	</div>
+	<div class="container" id="cardRow">
+		<div class="row align-content-center">
+			<div class="col-xs-3 text-center my-auto">
+				<div class="card d-flex" id="card" style="width: 15rem;">
+					<div class="card-body align-items-center my-auto">
+						<h5 class="card-title">Freelance Software Developer</h5>
+						<img class="card-img-top" src="{% static 'images/jeffstandridgecroppedphoto.jpg' %}" alt="Card image cap"><p class="card-text">I am passionate about technology, the pursuit of learning, and helping people.  I have valuable experience working with customers on behalf of companies to solve problem, and working as part of a team.</p>
+						<a href="{%url 'about' %}" class="btn btn-dark">More About Me</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-3" id="col2pic">
+				<div class="container" id="pic">
+					<img class="img-fluid" src="/static/images/georgia-de-lotz-UlahdGc-IRI-unsplash.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock %}
