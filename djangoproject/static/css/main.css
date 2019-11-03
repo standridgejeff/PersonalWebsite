@@ -1,13 +1,133 @@
-h1 {
-	color: blue;
+html { 
+  background: url(/static/images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.jumbotron {
-	background-image: url(/static/images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
+.inner {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center !important;
+	max-height: 50%;
+	margin-top: 55px;
+	padding-top: 10px;
+}
+
+.card {
+	margin-top: 5px;
+	padding-top: -5px;
+	font-weight: bold;
+	background-color: darkgray;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 30px;
+	max-height: 50%;
+}
+
+.card-title {
+	padding: -8px;
+	font-weight: bold;
+	margin-bottom: 2px;
+	margin-top: -15px;
+}
+
+.card-img-top {
+	border-style: solid;
+	border-color: darkgray;
+}
+
+/*.full-screen-background {
+	text-align: center !important;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background: url(/static/images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg) no-repeat center center;
+	-webkit-background-size: cover !important;
+	-ms-background-size: cover !important;
+	-0-background-size: cover !important;
+	background-size: cover !important;
+}
+
+.full-screen-background, .inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: lightgray;
+}*/
+
+
+
+
+
+/*html,
+body,
+header,
+#intro {
+	height: 100% !important;
+}
+
+#intro {
+	background: url(/static/images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+}
+
+ 
+#topContainer {
+	margin-top: 20px;
+}
+
+html{
+	background: url(/static/images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 }
 
-
-#card {
-	background-color: lightgray;
+html {
+	background: url(/static/images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
 }
+
+#bg {
+	position: fixed;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+}
+
+#bg-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	min-width: 50%;
+	min-height: 50%;
+}
+
+h1 {
+	border-style: solid;
+	border-color: black;
+	background-color: gray;
+	color: black;
+}*/
+

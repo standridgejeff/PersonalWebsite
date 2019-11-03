@@ -13,35 +13,68 @@
 
   <link rel="stylesheet" type= text/css href="{% static 'css/main.css' %}">
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
-    <a class="navbar-brand" href="{% url 'home' %}">Jeff Standridge</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'about' %}">About</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="nav">
+      <a class="navbar-brand" href="{% url 'home' %}">Jeff Standridge</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<body> 
+<!-- <div class="inner" id="cardRow">
+    <div class="row align-content-center">
+      <div class="col-xs-3 text-center my-auto">
+        <div class="card d-flex" id="card" style="width: 15rem;">
+          <div class="card-body align-items-center my-auto">
+            <h5 class="card-title">Freelance Software Developer</h5>
+            <img class="card-img-top" src="{% static 'images/jeffstandridgecroppedphoto.jpg' %}" alt="Card image cap"><p class="card-text">I am passionate about technology, the pursuit of learning, and helping people.  I have valuable experience working with customers on behalf of companies to solve problem, and working as part of a team.</p>
+            <a href="{%url 'about' %}" class="btn btn-dark">More About Me</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </nav>
-  <br/>
-  <div class="container">
+  </div> -->
+   <!--  <div id="intro" class="view">
+      <div class="mask">
+        <div  id="bg"> 
+            <div class="container" id="cardRow">
+              <div class="row">
+                <div class="col-xs-3 text-center" id="col">
+                  <div class="card text-center" id="card" style="width: 15rem;">
+                    <div class="card-body align-items-center">
+                      <h5 class="card-title">Freelance Software Developer</h5>
+                      <img class="card-img-top" src="{% static 'images/jeffstandridgecroppedphoto2.jpg' %}" alt="Card image cap"><p class="card-text">I am passionate about technology, the pursuit of learning, and helping people.  I have valuable experience working with customers on behalf of companies to solve problems, and working as part of a team.</p>
+                      <a href="{%url 'about' %}" class="btn btn-dark">More About Me</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="{% static 'images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg' %}" id="bg-img" alt="background image">
+          <h1 id="header">Freelance Software Devloper</h1>
+            <img src="{% static 'images/jeffstandridgecroppedphoto3.jpg' %}" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      </div> -->
     {% block content %}
     {% endblock %}
-  </div>
-  <br/><br/>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-</html>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  </html>
