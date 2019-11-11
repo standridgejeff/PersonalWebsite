@@ -1,9 +1,9 @@
-html { 
-  background: url(/static/images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+html  { 
+  background: url(/static/images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg) no-repeat center center fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
 }
 
 .inner {
@@ -20,18 +20,72 @@ html {
 	padding-top: 10px;
 }
 
+/*.carousel-item-active {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+  /*---Firefox Bug Fix --*/
+  /*.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+}*/
+
+/*#aboutpage {
+	border-style: solid;
+	border-width: 100px;
+	border-color: black;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	object-fit: cover;
+}
+
+#row {
+	background-color:  darkgray;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}*/
+
+.carousel, .carousel-inner {
+	min-width: 100vw;
+	min-height: 100vh;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	position: fixed;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 75px;
+  width: 75px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .75);
+}
 .card {
+	color: white;
 	margin-top: 5px;
 	padding-top: -5px;
 	font-weight: bold;
-	background-color: darkgray;
+	background-color: rgba(128,128,128,.75);
 	background-size: cover;
 	position: relative;
 	margin-bottom: 30px;
-	max-height: 50%;
+	max-height: 30%;
 }
 
 .card-title {
+	color: white;
 	padding: -8px;
 	font-weight: bold;
 	margin-bottom: 2px;
@@ -40,8 +94,52 @@ html {
 
 .card-img-top {
 	border-style: solid;
-	border-color: darkgray;
+	border-color: rgba(0,0,0,.5);
 }
+
+footer {
+	color: white;
+}
+
+/*.center-block {
+	float: none;
+}*/
+
+/*.carousel-img {
+	width: 100%;
+	height: 100%;
+}*/
+
+.carousel-inner {
+	object-fit: cover;
+}}
+/*#carouselpic {
+	 background: url(/static/images/ian-schneider-TamMbr4okv4-unsplash.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+/*#carouselpic {
+	width: 50%;
+	margin: auto;
+}*/
+
+/*.carouselExampleControls {
+   float: none;
+   margin: 0 auto;
+}
+
+.carousel-control-prev-icon {
+	height: 50px;
+	width: 50px;
+}
+
+.carousel-control-next-icon {
+	height: 50px;
+	width: 50px;
+}*/
 
 /*.full-screen-background {
 	text-align: center !important;
